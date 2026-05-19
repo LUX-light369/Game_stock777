@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  gamingbot:
+    build: .
+    restart: always
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs

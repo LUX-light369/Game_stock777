@@ -1,0 +1,11 @@
+[Unit]
+Description=Gaming Bot V5
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/gamingbot
+ExecStart=/usr/bin/python3 app/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
