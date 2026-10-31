@@ -11,6 +11,7 @@ import fixes  # noqa: F401
 
 
 async def main():
+    await bot.delete_webhook(drop_pending_updates=True)
     await app.dp.start_polling(app.bot)
 
 
